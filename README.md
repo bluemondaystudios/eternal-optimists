@@ -6,9 +6,13 @@ Static one-page site (HTML/CSS/JS, no build step) for GitHub Pages.
 Repo **Settings → Pages → Build and deployment → Deploy from a branch → `main` / `(root)`**.
 `.nojekyll` is included so files are served as-is.
 
-## Swapping in the official logo
-1. Add the logo as `assets/img/logo.png` (square, transparent background, ~512px).
-2. In `index.html`, replace every `assets/img/logo-placeholder.svg` (favicon, header, footer) with `assets/img/logo.png`.
+## Logo
+Cropped from the school's registration poster (low-resolution source).
+- `assets/img/logo.png` — 512px master, transparent outside the circle
+- `assets/img/logo-sm.png` — used in header/footer
+- `assets/img/favicon.png`, `assets/img/apple-touch-icon.png` — browser/home-screen icons
+
+If the school can supply the original high-res logo file, regenerate these from it.
 
 ## Structure
 - `index.html` — all content (hero, why us, about, classes, school life, gallery, enrolment enquiry, contact)

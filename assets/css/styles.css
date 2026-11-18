@@ -87,7 +87,7 @@ p { margin: 0 0 1em; }
 .site-header + .piping { position: sticky; top: 76px; z-index: 49; }
 .header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 76px; gap: 16px; }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-.brand-logo { width: 56px; height: 56px; object-fit: contain; flex-shrink: 0; }
+.brand-logo { width: 64px; height: 64px; object-fit: contain; flex-shrink: 0; }
 .brand-text { display: flex; flex-direction: column; line-height: 1.1; }
 .brand-name { font-family: var(--font-head); font-weight: 700; font-size: 1.4rem; color: var(--blue); }
 .brand-sub { font-family: var(--font-head); font-weight: 600; font-size: .85rem; color: var(--orange); }
@@ -275,7 +275,7 @@ p.eyebrow.center { display: table; margin-inline: auto; }
 .site-footer { background: var(--ink); color: #C9D2E6; padding: 40px 0; }
 .footer-inner { display: grid; grid-template-columns: 1fr auto; gap: 14px 30px; align-items: center; }
 .footer-brand { display: flex; align-items: center; gap: 14px; }
-.footer-brand img { background: #fff; border-radius: 50%; }
+.footer-brand img { border-radius: 50%; }
 .footer-name { font-family: var(--font-head); font-weight: 600; color: #fff; margin: 0; }
 .footer-social { margin: 0; }
 .footer-social a { color: var(--yellow); font-weight: 700; }
