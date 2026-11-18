@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Eternal Optimist emblem (placeholder)">
+  <!-- TEMPORARY placeholder until the official school logo is supplied.
+       Replace assets/img/logo.png and update the <img> src in index.html. -->
+  <defs>
+    <pattern id="s" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="12" height="12" fill="#F26B1D"/>
+      <rect width="5" height="12" fill="#1E4FA3"/>
+    </pattern>
+  </defs>
+  <circle cx="60" cy="60" r="58" fill="url(#s)"/>
+  <circle cx="60" cy="60" r="46" fill="#fff"/>
+  <circle cx="60" cy="60" r="46" fill="none" stroke="#2BA3D9" stroke-width="3"/>
+  <text x="60" y="72" text-anchor="middle" font-family="Fredoka, Arial Rounded MT Bold, sans-serif" font-weight="700" font-size="36" fill="#1E4FA3">E<tspan fill="#F26B1D">O</tspan></text>
+</svg>
