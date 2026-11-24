@@ -24,3 +24,11 @@ If the school can supply the original high-res logo file, regenerate these from 
 - Fees, school hours, exact class age bands
 - That 079 028 7512 is on WhatsApp
 - Parental consent for the older photos (Career Day, Baking Day, concert, Gold Reef City). The school supplied the November 2026 photo set itself and confirmed consent for it.
+
+## Search & sharing
+- `<head>` has the canonical URL, Open Graph/Twitter tags and `assets/img/og-image.jpg` (1200x630) for link previews on WhatsApp/Facebook.
+- Structured data (JSON-LD `Preschool` + `WebSite`) gives Google the school name, logo, contact details, languages and TikTok profile.
+- `robots.txt` and `sitemap.xml` are at the root. After the site is live, add it to Google Search Console and submit the sitemap.
+- Icons: `favicon.ico`, `assets/img/favicon-48.png` (Google search favicon), `icon-192/512` and `site.webmanifest`.
+- The Google "profile" panel on the right of search results comes from a **Google Business Profile**, which the school must claim at business.google.com (it can't be created from the website). Link it to this domain once verified.
+
