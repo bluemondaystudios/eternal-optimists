@@ -349,3 +349,67 @@ p.eyebrow.center { display: table; margin-inline: auto; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }
 }
+
+/* ---------- Curriculum (inside Classes) ---------- */
+.class-tag {
+  display: inline-block; margin: 14px 22px 0; padding: 3px 12px; border-radius: 999px;
+  font-family: var(--font-head); font-weight: 600; font-size: .8rem; letter-spacing: .02em;
+}
+.class-tag + h3 { margin-top: 10px; }
+.tag-ncf { background: var(--orange-soft); color: var(--orange-dark); }
+.tag-caps { background: var(--sky-soft); color: var(--blue-dark); }
+
+.curriculum { margin-top: 64px; scroll-margin-top: 100px; }
+.curriculum-title { text-align: center; color: var(--blue); font-size: clamp(1.6rem, 3vw, 2.1rem); }
+.curriculum-lead { text-align: center; color: var(--muted); max-width: 40em; margin: 0 auto 32px; }
+
+.cur-panel { border-radius: var(--radius); overflow: hidden; background: var(--cream); margin-bottom: 28px; }
+.cur-ncf { box-shadow: 0 8px 0 var(--orange); }
+.cur-caps { box-shadow: 0 8px 0 var(--blue); }
+.cur-head { padding: 22px 28px 26px; color: #fff; position: relative; }
+.cur-head::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 10px; }
+.cur-ncf .cur-head { background: var(--orange); }
+.cur-ncf .cur-head::after { background: linear-gradient(#fff 0 25%, var(--sky) 25% 75%, #fff 75%); }
+.cur-caps .cur-head { background: var(--blue); }
+.cur-caps .cur-head::after { background: linear-gradient(#fff 0 25%, var(--orange) 25% 75%, #fff 75%); }
+.cur-who { margin: 0 0 4px; font-family: var(--font-head); font-weight: 600; text-transform: uppercase; letter-spacing: .08em; font-size: .85rem; opacity: .9; }
+.cur-head h4 { margin: 0; font-family: var(--font-head); font-size: clamp(1.35rem, 2.6vw, 1.75rem); line-height: 1.2; }
+.cur-body { padding: 26px 28px 30px; }
+.cur-body > p { max-width: 52em; }
+.cur-sub { font-family: var(--font-head); font-weight: 600; font-size: 1.1rem; color: var(--ink); margin: 22px 0 14px; }
+
+.cur-checks { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 10px 14px; }
+.cur-checks li {
+  display: flex; align-items: center; gap: 10px; background: #fff; padding: 8px 16px 8px 10px; border-radius: 999px; font-weight: 700; font-size: .95rem;
+}
+.cur-checks li::before {
+  content: ""; width: 22px; height: 22px; flex: none; border-radius: 50%; background: var(--orange)
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 15px no-repeat;
+}
+
+.elda-grid, .caps-grid { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+.elda-grid { grid-template-columns: repeat(3, 1fr); }
+.caps-grid { grid-template-columns: repeat(4, 1fr); }
+.elda, .caps-subject { background: #fff; border-radius: 16px; padding: 18px 18px 16px; }
+.elda { display: flex; gap: 14px; align-items: flex-start; border-top: 5px solid var(--orange); }
+.elda:nth-child(even) { border-top-color: var(--sky); }
+.elda-num {
+  flex: none; width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--orange-soft); color: var(--orange-dark); font-family: var(--font-head); font-weight: 700;
+}
+.elda:nth-child(even) .elda-num { background: var(--sky-soft); color: var(--blue-dark); }
+.elda h5, .caps-subject h5 { margin: 4px 0 4px; font-family: var(--font-head); font-size: 1.08rem; line-height: 1.25; color: var(--ink); }
+.elda p, .caps-subject p { margin: 0; color: var(--muted); font-size: .95rem; line-height: 1.5; }
+.caps-subject { border-top: 5px solid var(--blue); }
+.caps-subject:nth-child(even) { border-top-color: var(--sky); }
+.cur-note { margin: 18px 0 0; font-weight: 700; color: var(--blue-dark); }
+
+@media (max-width: 1000px) {
+  .elda-grid, .caps-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .elda-grid, .caps-grid { grid-template-columns: 1fr; }
+  .cur-head { padding: 18px 20px 24px; }
+  .cur-body { padding: 20px; }
+  .cur-checks li { border-radius: 14px; }
+}
